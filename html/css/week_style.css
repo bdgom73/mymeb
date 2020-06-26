@@ -1,0 +1,330 @@
+*{
+    box-sizing: border-box; 
+}
+
+a{
+    text-decoration: none;
+    
+}
+body{
+    background-color: #2d2d2d;
+    overflow-x:hidden; overflow-y: auto;
+}
+/* 헤더부분 */
+.header{
+    background-color: #1C1C1C;
+    margin: -15px -15px 0 -10px;
+}
+.header::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.main_header_img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.main_header_img img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+/* 네비부분 */
+.nav1, .nav2, .nav3,
+.nav4, .nav5{
+    list-style:none;
+    float: left;
+    font-size: 15px;
+    font-family: 나눔고딕;
+    line-height: 30px;
+    border-right: 1px solid gray;
+    padding-right: 30px;
+    padding-left: 30px;
+   
+}
+.nav1{
+    border-left: 1px solid gray;
+    
+    border-right:1px solid gray;
+}
+.nav1:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav2:hover{
+   
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav3:hover{
+  
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav4:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav5:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.main_nav_ul{
+    width: 700px;
+    margin: 0 auto ;
+    padding-bottom: 20px;
+
+}
+.main_nav a{
+   color: #ffffff;
+}
+/* 컨텐트부분 */
+.main_img{ 
+    width: 600px;
+    height: 500px; 
+}
+.content_img{
+    width: 600px;
+    height: 500px; 
+    margin: 50px auto 80px auto;
+}
+
+
+
+/* 컨텐트 네비 부분 */
+
+.main_week::after{
+    display: block;
+    content:"";
+    clear: both;
+}
+.main_weeknav{
+    width: 1000px;
+    margin: 0 auto;
+}
+.weeknav1, .weeknav2,
+.weeknav3, .weeknav4, .weeknav5,
+.weeknav6, .weeknav7, .weeknav8{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.main_weeknav a{
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.weeknav1:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav2:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav3:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav4:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav5:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav6:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav7:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav8:hover{
+    background-color:#BDBDBD ;
+}
+
+/* ------------------------------------------------------------- 
+
+이 아래 컨텐트 주 부분은 자유롭게 변경하여 사용
+
+ ------------------------------------------------------------- */
+
+
+/* 전광판 */
+/* --------------------------------------------------------------------------- */
+.box {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    
+  }
+  .marquee {
+    width:600px;
+    padding:0.5em 0;
+    overflow:hidden;
+    background-color:#BDBDBD;
+    margin-bottom:10px;
+    position:relative;
+    border-radius: 15px;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: 나눔고딕;
+
+  }
+  
+  .marquee p::after {
+    content:"";
+    white-space:nowrap;
+    padding-right:50px;
+  }
+  
+  .marquee p {
+    margin:0;
+    padding-left:600px;
+    display:inline-block;
+    white-space:nowrap;
+      -webkit-animation-name: marquee;
+      -webkit-animation-timing-function:linear;
+      -webkit-animation-duration:10s;
+      -webkit-animation-iteration-count:infinite;
+      -moz-animation-name:marquee;
+      -moz-animation-timing-function:linear;
+      -moz-animation-duration:10s;
+      -moz-animation-iteration-count:infinite;
+      -ms-animation-name:marquee;
+      -ms-animation-timing-function:linear;
+      -ms-animation-duration:10s;
+      -ms-animation-iteration-count:infinite;
+      -o-animation-name:marquee;
+      -o-animation-timing-function:linear;
+      -o-animation-duration:10s;
+      -o-animation-iteration-count:infinite;
+      animation-name:marquee;
+      animation-timing-function:linear;
+      animation-duration:10s;
+      animation-iteration-count:infinite;
+  }
+  @-webkit-keyframes marquee {
+    from   { -webkit-transform: translate(0%);}
+    99%,to { -webkit-transform: translate(-100%);}
+  }
+  @-moz-keyframes marquee {
+    from   { -moz-transform: translate(0%);}
+    99%,to { -moz-transform: translate(-100%);}
+  }
+  @-ms-keyframes marquee {
+    from   { -ms-transform: translate(0%);}
+    99%,to { -ms-transform: translate(-100%);}
+  }
+  @-o-keyframes marquee {
+    from   { -o-transform: translate(0%);}
+    99%,to { -o-transform: translate(-100%);}
+  }
+  @keyframes marquee {
+    from   { transform: translate(0%);}
+    99%,to { transform: translate(-100%);}
+  }
+/* 전광판 */
+/* --------------------------------------------------------------------------- */
+/* 컨텐트 주 부분 */
+.table_content{
+    background-color: #3e3e3e;
+    
+    margin: 50px auto ;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    
+}
+.protable{
+    border-collapse: collapse;
+   
+    margin: 0 auto ;
+    font-family: 나눔고딕;
+}
+.table_content h2{
+    text-align: center;
+    padding: 5px;
+    color: #A4A4A4
+}
+.protable th{
+    text-align: center;
+    padding: 5px;
+    width: 120px;
+    background-color: #BDBDBD;
+    border-radius: 10px;
+}
+
+.protable td{
+    text-align: left;
+    padding: 5px 5px 5px 30px;
+    border-bottom: 1px gray solid;
+    color:#BDBDBD;
+}
+.protable span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------- 
+
+이 위 컨텐트 주 부분은 자유롭게 변경하여 사용
+
+------------------------------------------------------------- */
+/* 푸터부분 */
+.main_footer li{
+    list-style:none;
+}
+.footer a{
+    color: #A4A4A4;
+}   
+.footer{
+    background-color:#1C1C1C ;
+    margin: 0 -10px;
+    padding-bottom: 20px;
+    position: relative;
+    color:#A4A4A4;
+}
+.footer_header{
+    padding: 15px 0px 0px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.main_footer{
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+.footer_logo img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.footer_logo img:hover{
+    width: 140px;
+    height: 140px;
+}
+
+.footer_a:hover{
+   color: #E6E6E6;
+   font-size: 14px;
+}
+.main_footer li{
+    font-size: 13px;
+}
+.footer_img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footer_img img{
+    width: 200px;
+}
+.footer_img img:hover{
+    width: 220px;
+}
+
+/* ------------------------------------------------------------- */

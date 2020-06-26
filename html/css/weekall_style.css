@@ -1,0 +1,375 @@
+/* 고정부분 */
+*{
+    box-sizing: border-box; 
+}
+
+a{
+    text-decoration: none;
+    
+}
+body{
+    background-color: #2d2d2d;
+    overflow-x:hidden; overflow-y: auto;
+}
+
+/* 헤더부분 */
+.header{
+    background-color: #1C1C1C;
+    margin: -15px -15px 0 -10px;
+}
+.header::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.main_header_img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.main_header_img img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+/* 네비부분 */
+.nav1, .nav2, .nav3,
+.nav4, .nav5{
+    list-style:none;
+    float: left;
+    font-size: 15px;
+    font-family: 나눔고딕;
+    line-height: 30px;
+    border-right: 1px solid gray;
+    padding-right: 30px;
+    padding-left: 30px;
+   
+}
+.nav1{
+    border-left: 1px solid gray;
+    background-color: black;
+    border-radius: 15px;
+}
+.nav1:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav2:hover{
+   
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav3:hover{
+  
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav4:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav5:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.main_nav_ul{
+    width: 700px;
+    margin: 0 auto ;
+    padding-bottom: 20px;
+
+}
+.main_nav a{
+   color: #ffffff;
+}
+/* 컨텐트부분 */
+.main_img{ 
+    width: 600px;
+    height: 500px; 
+}
+.content_img{
+    width: 600px;
+    height: 500px; 
+    margin: 50px auto 80px auto;
+}
+
+
+
+/* 컨텐트 네비 부분 */
+
+/* .main_week::after{
+    display: block;
+    content:"";
+    clear: both;
+} */
+.main_weeknav{
+    width: 1000px;
+    margin: 0 auto;
+}
+.main_week{
+    width: 1000px;
+    margin: 0 auto;
+
+} 
+.weeknav1, .weeknav2,
+.weeknav3, .weeknav4, .weeknav5,
+.weeknav6, .weeknav7, .weeknav8{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.main_weeknav a{
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.weeknav1:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav2:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav3:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav4:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav5:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav6:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav7:hover{
+    background-color:#BDBDBD ;
+}
+.weeknav8:hover{
+    background-color:#BDBDBD ;
+}
+
+/* ------------------------------------------------------------- 
+
+이 아래 컨텐트 주 부분은 자유롭게 변경하여 사용
+
+ ------------------------------------------------------------- */
+#bigimg{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#bigimg img{
+    width: 500px;
+}
+
+/* 컨텐트 주부분 */
+.week_content{
+    background-color: #3e3e3e;
+    width: 1300px;
+    margin: 50px auto ;
+    border-radius: 20px;
+    padding: 30px;
+}
+.week_content_bgcolor{
+    width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #4b4b4b;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------------------- */
+
+.week_content_co1{
+    font-family: 나눔고딕;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: 1px solid #BDBDBD;
+    padding: 10px;
+}
+.week_content_co1 h2{
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #A4A4A4;
+    font-size: 25px;
+    
+    margin: 0 auto;
+}
+.week_content_co1 p{
+    font-size: 20px;
+    padding: 5px;
+    text-align: left;
+    margin: 10px auto;
+    width: 500px;
+    color: #dddddd;
+}
+.week_content_co1 span{
+    color: white;
+    font-weight: bold;
+}
+/* ---------------------------------------------------------------- */
+.week_content_co2{
+    font-family: 나눔고딕;
+    border-bottom: 1px solid #BDBDBD;
+    border-top: 1px solid #BDBDBD;
+    padding: 10px;
+    position: relative;
+    
+}
+.week_content_co2 h2{
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #A4A4A4;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.week_content_co2_p1{
+    width: 1000px;
+    margin: 20px auto;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.week_content_co2_p1::after{
+    display:block;
+    content: "";
+    clear: both;
+}
+.week_content_co2_p1 img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    float: left;
+    border-radius: 50%;
+    
+}
+.week_content_co2_p1 p{
+    padding: 20px 5px 5px ;
+    float: left;
+    line-height: 25px;
+    text-align: left;
+    color: #dddddd;
+    font-size: 20px;
+}
+
+.week_content_co2_p1 span{
+    color: white;
+    font-weight: bold;
+}
+
+
+.week_content_co2_p1 img:hover{
+    border-radius: 3px;
+}
+/* ---------------------------------------------------------------- */
+.week_content_dateimg h2{
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #A4A4A4;
+    margin: 10px auto;
+    font-size: 25px;
+}
+.week_content_dateimg img{
+    width: 200px;
+    height: 200px;
+}
+.week_content_dateimgsize{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+.week_content_dateimg p{
+    font-size: 20px;
+    padding: 5px;
+    text-align: left;
+    margin: 10px auto;
+    width: 500px;
+    color: #dddddd;
+}
+.video_week{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.video_week video{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid wheat;
+}
+
+
+
+
+
+/* ------------------------------------------------------------- 
+
+이 위 컨텐트 주 부분은 자유롭게 변경하여 사용
+
+------------------------------------------------------------- */
+/* 푸터부분 */
+.main_footer li{
+    list-style:none;
+}
+.footer a{
+    color: #A4A4A4;
+}   
+.footer{
+    background-color:#1C1C1C ;
+    margin: 0 -10px;
+    padding-bottom: 20px;
+    position: relative;
+    color:#A4A4A4;
+}
+.footer_header{
+    padding: 15px 0px 0px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.main_footer{
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+.footer_logo img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+.footer_logo img:hover{
+    width: 140px;
+    height: 140px;
+}
+
+.footer_a:hover{
+   color: #E6E6E6;
+   font-size: 14px;
+}
+.main_footer li{
+    font-size: 13px;
+}
+.footer_img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footer_img img{
+    width: 200px;
+}
+.footer_img img:hover{
+    width: 220px;
+}
+
+/* ------------------------------------------------------------- */

@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box; 
+}
+
+a{
+    text-decoration: none;
+    
+}
+body{
+    background-color: #2d2d2d;
+    overflow-x:hidden; overflow-y: auto;
+}
+
+/* 헤더부분 */
+.header{
+    background-color: #1C1C1C;
+    margin: -15px -15px 0 -10px;
+}
+.header::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.main_header_img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.main_header_img img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+/* 네비부분 */
+.nav1, .nav2, .nav3,
+.nav4, .nav5{
+    list-style:none;
+    float: left;
+    font-size: 15px;
+    font-family: 나눔고딕;
+    line-height: 30px;
+    border-right: 1px solid gray;
+    padding-right: 30px;
+    padding-left: 30px;
+   
+}
+.nav1{
+    border-left: 1px solid gray;
+    
+    border-right:1px solid gray;
+}
+.nav1:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav2:hover{
+   
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav3:hover{
+  
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav4:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.nav5:hover{
+    
+    border-bottom: 1px solid #BDBDBD;
+}
+.main_nav_ul{
+    width: 700px;
+    margin: 0 auto ;
+    padding-bottom: 20px;
+
+}
+.main_nav a{
+   color: #ffffff;
+}
+/* 컨텐트부분 */
+.main_img{ 
+    width: 600px;
+    height: 500px; 
+}
+.content_img{
+    width: 600px;
+    height: 500px; 
+    margin: 50px auto 80px auto;
+}
+
+
+/* 게시판 목록 */
+.hspan {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 10px;
+}
+.table-content{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 800px;
+}
+.table-content th{
+    background-color: #1C1C1C;
+    color:white;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #2d2d2d;
+    width: 150px;
+    
+}
+.table-content td a{
+    color:white;
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+.table-content td {
+    color:white;
+    background-color: gray;
+}
+.name_con{
+    width: 10px;
+}
+
+.table2{
+    margin: 0 auto;
+    font-size: 13px;
+    
+}
+.table2 a{
+    color:whitesmoke;
+}
+.write{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0;
+}
+.write button{
+    border-radius: 8px;
+    background-color: #2d2d2d;
+    
+}
+.write input{
+    color:whitesmoke;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+}
+.write button:hover{
+    background-color:gray ;
+
+}
+
+ .table-content input[type="text"],
+.table-content input[type="password"] { 
+    /* 원하는 너비 설정 */
+    height: auto; /* 높이값 초기화 */ 
+    line-height : normal; /* line-height 초기화 */ 
+    padding: 5px; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */ 
+    font-family: inherit; /* 폰트 상속 */ 
+    border: 1px solid gray; border-radius: 0; /* iSO 둥근모서리 제거 */ 
+    outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */ 
+    -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */ 
+    -moz-appearance: none; 
+    appearance: none; 
+    background-color: #2d2d2d;
+    width: 100%;
+}
+.contenttext{
+    background-color: #2d2d2d;
+    width: 100%;
+    color:white;
+} 
+

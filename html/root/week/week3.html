@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="../../css/weekall_style.css">
+    <title>3차 / 자동물류창고</title>
+    <script>
+        function imgbigview(a,b){
+            document.getElementById(b).getElementsByTagName("img")[0].src= a.href;
+            if(document.getElementById(b).style.display=='block'){
+                document.getElementById(b).style.display='none';
+            }else document.getElementById(b).style.display='block';     
+        }
+        function hide(c) {
+            document.getElementById(c).style.display='none';
+        }
+    </script>
+</head>
+<body>
+    <!-- ------------------------------------------------------------- 
+
+        헤더 부분 고정
+
+    ------------------------------------------------------------- -->
+    <header class="header"> 
+        <div class="main_header">
+            <a href="../../index.html">
+                <div class="main_header_img">
+                    <img src="../../img/main_logo.png" alt="로고이미지" >
+                    
+                </div>
+            </a>
+        </div>
+        <div class="main_nav">
+            <ul class="main_nav_ul">
+                <li class="nav1"><a href="../progress.html">진행도</a></li>
+                <li class="nav2"><a href="../explanation.html">작품설명</a></li>
+                <li class="nav3"><a href="../monitoring.html">모니터링</a></li>
+                <li class="nav4"><a href="../../php/list.php">자유게시판</a></li>
+                <li class="nav5"><a href="../questionboard.html">질문게시판</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <!-- ------------------------------------------------------------- 
+
+        헤더 부분 고정
+
+    ----------------------------------------------------------------->
+  
+    <content>
+        <div class="img_size">
+            <div class="content_img">
+                <img src="../../img/progress_img.png" alt="메인이미지" class="main_img">
+            </div>
+        </div>
+
+            <!-------------------------------------------------------------------->
+             <!-------------------------------------------------------------------->
+              <!---------------여기부터 수정----------------------------------------->
+            <div class="main_week">
+                <div class="main_weeknav">
+                    <ol>
+                        <li class="weeknav1"><a href="week1.html">Week 1</a></li>
+                        <li class="weeknav2"><a href="week2.html">Week 2</a></li>  
+                        <li class="weeknav3"><a href="week3.html">Week 3</a></li>
+                        <style>
+                            .weeknav3{
+                                background-color: aquamarine;
+                            }
+                        </style>
+                        <li class="weeknav4"><a href="week4.html">Week 4</a></li>
+                        <li class="weeknav5"><a href="week5.html">Week 5</a></li>
+                        <li class="weeknav6"><a href="week6.html">Week 6</a></li>
+                        <li class="weeknav7"><a href="week7.html">Week 7</a></li>
+                        <li class="weeknav8"><a href="week8.html">Week 8</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="week_content">
+                <div class="week_content_bgcolor">
+                   <div class="week_content_co1">
+                        <h2>내용</h2>
+                            <p>
+                                근접센서를 이용하여 테스트 하려했으나, 현재 근접센서가 아직 준비가 되지않아
+                                현재 가지고있는 초음파 센서를 이용해 거리를 측정하여 반응하게 테스트하였다.
+                            </p>
+                   </div>
+                   <div class="week_content_co2">
+                       <h2>초음파센서</h2>
+                       <div class="week_content_co2_p1">
+                            
+                            <a href="../../img/weekimg/week3-1.jpg"   onclick="imgbigview(this,'bigimg'); return false;">
+                                <img src="../../img/weekimg/week3-1.jpg" alt="초음파센서">
+                            </a>
+                            
+                                <p>
+                                    다음과 같이 코드를 입력하여 손으로 거리를 측정하였다.
+                                </p>
+                        </div>
+                        <div id="bigimg">
+                            <img src="" onclick="hide('bigimg');">
+                        </div>
+                        <div class="week_content_co2_p1">
+                            <a href="../../img/weekimg/week3-2-1.jpg"   onclick="imgbigview(this,'bigimg'); return false;">
+                                <img src="../../img/weekimg/week3-2.jpg" alt="초음파센서반응" >
+                            </a>
+                            <p>
+                                거리에 따라 계속해서 출력이 되는 것을 확인할 수 있었다<br>
+                                그리고 특정위치에 왔을때를 정확히 측정해야 하므로<br>
+                                 거리를 10cm이하로 잡아
+                                10cm이하로 위치가 감지될 <br>때에만 작동하게 변경하기로 하였다.
+                            </p>
+                        </div>  
+                      
+                    </div>
+                    <div class="week_content_dateimg">
+                        <h2>테스트결과</h2>
+                        <div class="video_week">
+                            <video src="../../video/week2senser.mp4" controls>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    </content>
+
+
+    <!-- ------------------------------------------------------------- 
+
+        푸터 부분 고정
+
+    ------------------------------------------------------------------>
+
+    <footer>
+        <div>
+            <div class="footer">
+                <div class="footer_logo">
+                    <a href="../../index.html">
+                        <img src="../../img/main_logo.png" alt="로고이미지" >
+                    </a>
+                </div>
+                <div class="footer_header">
+                    웹페이지정보
+                </div>
+                <div class="main_footer">
+                    <ol>
+                        <li>홈페이지 목적 : 과제 제출용</li>
+                        <li>제출처 : <a href="http://www.kopo.ac.kr/incheon/content.do?menu=7235" class="footer_a" target="_blank">한국폴리텍대학 인천캠퍼스 정보통신과</a></li>
+                        <li>e-mail : <a href="mailto:bdgom73@naver.com" class="footer_a">bdgom73@naver.com</a></li>
+                        <li>오류수정요청 : <a href="mailto:bdgom73@naver.com" class="footer_a">bdgom73@naver.com</a></li>
+                        <li class="footer_img"><a href="http://www.kopo.ac.kr/incheon/index.do" target="_blank"><img src="../../img/main_footer_img.png" alt="폴리텍 인천"></a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ------------------------------------------------------------- 
+
+        푸터 부분 고정
+
+    ------------------------------------------------------------------>
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    font-style: normal;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+body{
+    background-color: ghostwhite;
+}
+
+
+/* 헤더부분 */
+.header{
+  
+   background-color: #ffffff;
+   border:5px outset rebeccapurple ; 
+   margin-bottom: 10px;
+   width: 1300px;
+   height: 60px;
+   line-height: 30px;
+   vertical-align: middle;
+   position: sticky;
+   top: 1px;
+   margin: 0 auto;
+}
+.main_logo{
+    display: inline;
+    background-color:white;
+}
+.main_logo img{
+    width: 100px;
+    height: 40px;
+    background-color:white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: -12px;
+   
+}
+.main_logo a {
+    background-color:white;
+    float: left;
+    margin-right: 500px;
+    
+}
+/* 헤더 네비게이션부분 */
+.nav{
+    width: 1500px;
+    height: 30px;
+}
+.nav a{
+    color:#151515;
+}
+.header ul li{
+
+    list-style: none;
+    background-color: #fff;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+   
+}
+.nav_mainlist li{
+    
+    display: block;
+    width: 120px;
+    font-size: 12px;
+    font-weight: bold;
+   
+
+}
+
+.nav li a:hover{
+    color:#FE2E2E;
+    text-decoration: underline;
+}
+.nav_mainlist_1{
+    float: left;
+    border-right: 1px solid #2d2d2d;
+    
+}
+
+.nav_mainlist_3{
+    float: left;
+    border-right: 1px solid #2d2d2d;
+    
+    
+}
+.nav_mainlist_4{
+    float: left;
+    border-right: 1px solid #2d2d2d;
+    
+   
+}
+.nav_mainlist_5{
+    float: left;
+    border-right: 1px solid #2d2d2d;
+    
+  
+}
+.nav_mainlist_6{
+    float: left;
+}
+ .nav_mainlist::after{
+    display: block;
+    content: "";
+    clear: both;
+    
+ }
+
+/* 메인 공지 */
+.main-notice{
+    width: 500px;
+    height: 250px;
+    background-color: #04B404;
+    text-align: center;
+    margin: 20px auto;
+    border: 10px groove blue;
+    color: cornsilk;
+}
+.main-notice h1{
+    font-size: 30px;
+   
+}
+.main-notice span{
+    color: crimson;
+}
+
+/* 게시판 목록 */
